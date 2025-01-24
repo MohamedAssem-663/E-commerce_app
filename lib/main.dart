@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/features/splash/presentation/views/widgets/splash_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,7 +11,7 @@ class EcommerceApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(),
+      home: SplashView(),
     );
   }
 }
