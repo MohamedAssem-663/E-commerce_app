@@ -28,7 +28,9 @@ class EnterPasswordBody extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          Center(child: ContinuButton(
+          Center(
+              child: ContinuButton(
+            title: 'Cuntinu',
             onPressed: () {
               GoRouter.of(context).push(AppRouter.kHomeView);
             },
@@ -36,8 +38,11 @@ class EnterPasswordBody extends StatelessWidget {
           const SizedBox(
             height: 15,
           ),
-          const CreateAccount(
-            text: 'Forgot PassWord',
+          CreateAccount(
+            onPressed: () {
+              GoRouter.of(context).push(AppRouter.kForgotPassWordView);
+            },
+            text: 'Forgot PassWord?',
             text2: 'Reset',
           ),
         ],

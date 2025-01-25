@@ -2,6 +2,7 @@ import 'package:ecommerce_app/core/configs/Utils/app_router.dart';
 import 'package:ecommerce_app/core/configs/Utils/widgets/continu_button.dart';
 import 'package:ecommerce_app/core/configs/Utils/widgets/local_text.dart';
 import 'package:ecommerce_app/core/configs/Utils/widgets/text_field.dart';
+import 'package:ecommerce_app/features/auth/signin/widget/createAccount.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -36,21 +37,20 @@ class CreateAccountBody extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          ContinuButton(onPressed: () {
-            GoRouter.of(context).push(AppRouter.kHomeView);
-          }),
+          ContinuButton(
+              title: 'Cuntinu',
+              onPressed: () {
+                GoRouter.of(context).push(AppRouter.kHomeView);
+              }),
           const SizedBox(
             height: 20,
           ),
-          const Row(
-            children: [
-              Text('Forget PassWord?'),
-              Text(
-                'Reset',
-                style: TextStyle(fontWeight: FontWeight.bold),
-              )
-            ],
-          )
+          CreateAccount(
+              text: 'Forgot PassWord',
+              text2: 'Reset',
+              onPressed: () {
+                GoRouter.of(context).push(AppRouter.kResetView);
+              })
         ],
       ),
     );

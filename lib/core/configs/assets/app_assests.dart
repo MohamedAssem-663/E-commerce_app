@@ -6,4 +6,5 @@ class AppAssets {
   static const notfound = 'assets/images/not_found.png';
   static const orderPlaced = 'assets/images/order_placed.png';
   static const profile = 'assets/images/profile.png';
+  static const emailsending = 'assets/images/email_sending.png';
 }
