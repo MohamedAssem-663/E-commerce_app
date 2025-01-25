@@ -15,7 +15,7 @@ class ForgotPasswordViewBody extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const localText(
+          const LocalText(
             text: 'Forgot PassWord',
           ),
           const SizedBox(

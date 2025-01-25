@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class localText extends StatelessWidget {
-  const localText({
+class LocalText extends StatelessWidget {
+  const LocalText({
     super.key,
     required this.text,
   });

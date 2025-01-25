@@ -2,7 +2,7 @@ import 'package:ecommerce_app/core/configs/Utils/app_router.dart';
 import 'package:ecommerce_app/core/configs/Utils/widgets/continu_button.dart';
 import 'package:ecommerce_app/core/configs/Utils/widgets/local_text.dart';
 import 'package:ecommerce_app/core/configs/Utils/widgets/text_field.dart';
-import 'package:ecommerce_app/features/auth/signin/widget/createAccount.dart';
+import 'package:ecommerce_app/features/auth/signin/widget/create_account.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -17,7 +17,7 @@ class CreateAccountBody extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
         children: [
-          const localText(text: 'Create Account'),
+          const LocalText(text: 'Create Account'),
           const SizedBox(
             height: 20,
           ),

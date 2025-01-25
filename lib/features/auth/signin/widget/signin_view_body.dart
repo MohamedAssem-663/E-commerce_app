@@ -1,6 +1,6 @@
 import 'package:ecommerce_app/core/configs/Utils/app_router.dart';
 import 'package:ecommerce_app/core/configs/Utils/widgets/continu_button.dart';
-import 'package:ecommerce_app/features/auth/signin/widget/createAccount.dart';
+import 'package:ecommerce_app/features/auth/signin/widget/create_account.dart';
 import 'package:ecommerce_app/core/configs/Utils/widgets/text_field.dart';
 import 'package:ecommerce_app/core/configs/Utils/widgets/local_text.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +16,7 @@ class SigninViewBody extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const localText(
+          const LocalText(
             text: 'Sign in',
           ),
           const SizedBox(
